@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Auth.LoginController">
+<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth.LoginController">
    <children>
       <Label layoutX="197.0" layoutY="8.0" text="AUTO TIMETABLE">
          <font>
@@ -40,7 +40,9 @@
             <Font name="Impact" size="24.0" />
          </font>
       </Label>
-      <Button id="signup" layoutX="249.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Sign up" />
-      <CheckBox id="rem" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" text="Remember me" />
+      <Button id="signup" layoutX="249.0" layoutY="272.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="133.0" styleClass="button" text="Sign In" />
+      <CheckBox id="rem" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" styleClass="label" text="Remember me" />
+      <Label layoutX="179.0" layoutY="320.0" text="Don't have an account?" />
+      <Label layoutX="179.0" layoutY="345.0" styleClass="signupbtn" text="Sign up" />
    </children>
 </AnchorPane>
