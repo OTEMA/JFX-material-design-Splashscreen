@@ -17,9 +17,10 @@
     fx-text-fill:#ffffff;
 }
 .button{
+    -fx-background-color:#4B0082;
     -fx-background-radius:5px;
     -fx-border-radius:5px;
-    fx-text-fill:#4B0082;
+    fx-text-fill:#FFFFFF;
 
 }
 button:hover{
@@ -37,13 +38,13 @@ button:active{
 
 }
 .signupbtn{
-fx-text-fill:#DAA520;
+    fx-text-fill:#DAA520;
 }
 .signupbtn:hover{
-fx-text-fill:#FFD700;
+    fx-text-fill:#FFD700;
 }
 .signupbtn:active{
-fx-text-fill:#DAA520;
+    fx-text-fill:#DAA520;
 }
 
 .pane{

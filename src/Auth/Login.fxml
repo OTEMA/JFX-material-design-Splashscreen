@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -40,9 +41,25 @@
             <Font name="Impact" size="24.0" />
          </font>
       </Label>
-      <Button id="signup" layoutX="249.0" layoutY="272.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="133.0" styleClass="button" text="Sign In" />
-      <CheckBox id="rem" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" styleClass="label" text="Remember me" />
-      <Label layoutX="179.0" layoutY="320.0" text="Don't have an account?" />
-      <Label layoutX="179.0" layoutY="345.0" styleClass="signupbtn" text="Sign up" />
+      <JFXButton id="signup" buttonType="RAISED" layoutX="249.0" layoutY="272.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="133.0" ripplerFill="#DAA520" styleClass="button" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></JFXButton>
+      <JFXCheckBox id="rem" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" styleClass="label" text="Remember me" unCheckedColor="#333333">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font></JFXCheckBox>
+      <Label layoutX="179.0" layoutY="320.0" text="Don't have an account?">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="345.0" styleClass="signupbtn" text="Sign up">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="RED" iconName="CLOSE" layoutX="680.0" layoutY="18.0" onMouseClicked="#closeApp" size="1.5em" />
+      
    </children>
 </AnchorPane>
