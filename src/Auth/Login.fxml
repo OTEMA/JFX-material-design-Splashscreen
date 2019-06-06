@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns="http://javafx.com/javafx/8.0.212" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth.LoginController">
+<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth.LoginController">
    <children>
       <Label layoutX="197.0" layoutY="8.0" text="AUTO TIMETABLE">
          <font>
@@ -48,18 +49,24 @@
       <JFXCheckBox id="rem" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" styleClass="label" text="Remember me" unCheckedColor="#333333">
          <font>
             <Font name="Calibri Light" size="14.0" />
-         </font></JFXCheckBox>
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXCheckBox>
       <Label layoutX="179.0" layoutY="320.0" text="Don't have an account?">
          <font>
             <Font name="Calibri Light" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="179.0" layoutY="345.0" styleClass="signupbtn" text="Sign up">
+      <Label layoutX="179.0" layoutY="345.0" onMouseClicked="#loadRegistration" styleClass="signupbtn" text="Sign up">
          <font>
             <Font name="Calibri Light" size="14.0" />
          </font>
       </Label>
-      <FontAwesomeIcon fill="RED" iconName="CLOSE" layoutX="680.0" layoutY="18.0" onMouseClicked="#closeApp" size="1.5em" />
+      <FontAwesomeIcon fill="WHITE" iconName="CLOSE" layoutX="680.0" layoutY="18.0" onMouseClicked="#closeApp" size="1.5em" styleClass="icon">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
       
    </children>
 </AnchorPane>

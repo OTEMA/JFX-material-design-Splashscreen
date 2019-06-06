@@ -30,7 +30,7 @@
             <Font name="Impact" size="14.0" />
          </font>
       </Label>
-      <ProgressBar id="progressBar" layoutY="292.0" prefHeight="10.0" prefWidth="700.0" progress="0.0" />
-      <ProgressIndicator id="pi" layoutX="350.0" layoutY="290.0" progress="0.0" />
+      <ProgressBar fx:id="progressBar" layoutY="292.0" prefHeight="10.0" prefWidth="700.0" progress="0.0" />
+      <ProgressIndicator fx:id="pi" layoutX="350.0" layoutY="290.0" progress="0.0" />
    </children>
 </AnchorPane>

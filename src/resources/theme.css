@@ -13,43 +13,49 @@
 }
 .textfield{
     -fx-background-color:#333333;
-    fx-cursor-color:white;
-    fx-text-fill:#ffffff;
+    -fx-cursor-color:white;
+    -fx-text-fill:#ffffff;
 }
 .button{
     -fx-background-color:#4B0082;
     -fx-background-radius:5px;
     -fx-border-radius:5px;
-    fx-text-fill:#FFFFFF;
-
-}
-button:hover{
-    -fx-background-color: #FFD700;
     -fx-border-style:solid;
-    -fx-border-radius:5px;
-    fx-text-fill:#ffffff;
+        -fx-text-fill:#FFFFFF;
 
 }
-button:active{
+.button:hover{
     -fx-background-color: #330033;
     -fx-border-style:solid;
     -fx-border-radius:5px;
-    fx-text-fill:#ffffff;
-
+    -fx-text-fill:#ffffff;
+}
+.button:pressed{
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 ); 
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+    -fx-border-style:solid;
+    -fx-border-radius:5px;
+    -fx-text-fill:#ffffff;
 }
 .signupbtn{
-    fx-text-fill:#DAA520;
+    -fx-text-fill:#DAA520;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 ); 
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
 }
 .signupbtn:hover{
-    fx-text-fill:#FFD700;
+    -fx-text-fill:#FFD700;
 }
 .signupbtn:active{
-    fx-text-fill:#DAA520;
+    -fx-text-fill:#DAA520;
 }
 
 .pane{
 
 }
 .icon{
+   -fx-text-fill:#ffffff;
+}
+.icon:hover{
+    -fx-text-fill:#ff0000;
 
 }

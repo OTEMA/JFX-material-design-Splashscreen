@@ -56,7 +56,7 @@ public class SplashScreenController implements Initializable {
                     if (pi.getProgress() == 1.0) {
                         Platform.runLater(() -> {
                             try {
-                                Parent root = FXMLLoader.load(getClass().getResource("Auth/Login.fxml"));
+                                Parent root = FXMLLoader.load(getClass().getResource("/Auth/Login.fxml"));
                                 parent.getChildren().removeAll();
                                 parent.getChildren().setAll(root);
                             } catch (IOException ex) {
