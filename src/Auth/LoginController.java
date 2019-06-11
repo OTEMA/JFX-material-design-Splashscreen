@@ -11,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -36,7 +37,13 @@ public class LoginController implements Initializable {
 
     @FXML
     private void closeApp(MouseEvent event) {
-        System.exit(0);
+        Object[] options = {"Yes", "No"};
+        int n = JOptionPane.showOptionDialog(null, "Do you want to Exit the System? ", "Login", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+        if (n == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        } else {
+
+        }
     }
 
     @FXML

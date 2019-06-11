@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Auth.RegisterController">
+<AnchorPane fx:id="parent" prefHeight="400.0" prefWidth="700.0" styleClass="parent" stylesheets="@../resources/theme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth.RegisterController">
    <children>
       <Label layoutX="207.0" layoutY="18.0" text="AUTO TIMETABLE">
          <font>
@@ -57,7 +56,7 @@
             <Font name="Calibri Light" size="14.0" />
          </font>
       </Label>
-      <FontAwesomeIcon fill="WHITE" iconName="CLOSE" layoutX="670.0" layoutY="17.0" onMouseClicked="#closeApp" size="1.5em" styleClass="icon">
+      <FontAwesomeIcon fill="WHITE" iconName="CLOSE" layoutX="680.0" layoutY="18.0" onMouseClicked="#closeApp" size="1.5em" styleClass="icon">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

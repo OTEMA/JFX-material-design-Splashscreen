@@ -50,6 +50,7 @@
 }
 
 .pane{
+    -fx-background-color:#4B0082;
 
 }
 .icon{
@@ -58,4 +59,7 @@
 .icon:hover{
     -fx-text-fill:#ff0000;
 
+}
+.progress{
+        -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
 }
