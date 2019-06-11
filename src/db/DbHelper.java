@@ -39,7 +39,7 @@ public class DbHelper {
         } catch (SQLException ex) {
             Logger.getLogger(DbHelper.class.getName()).log(Level.SEVERE, null, ex);
         }
-        System.out.println("Kenys table created successfully");
+       
 
     }
 

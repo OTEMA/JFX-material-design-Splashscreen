@@ -60,7 +60,7 @@ public class SplashScreenController implements Initializable {
                                 Parent root = FXMLLoader.load(getClass().getResource("/Auth/Login.fxml"));
                                 parent.getChildren().removeAll();
                                 parent.getChildren().setAll(root);
-                                 DbHelper.createNewDatabase("test.db");
+                                 DbHelper.createNewDatabase("timetable.db");
                             } catch (IOException ex) {
                                 Logger.getLogger(SplashScreenController.class.getName()).log(Level.SEVERE, null, ex);
                             }
