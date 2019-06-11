@@ -14,7 +14,7 @@ import javafx.scene.layout.AnchorPane;
 /**
  * FXML Controller class
  *
- * @author MASENO
+ * @author Theonlysmartboy <Theonlysmartboy@github.com>
  */
 public class DashboardController implements Initializable {
 

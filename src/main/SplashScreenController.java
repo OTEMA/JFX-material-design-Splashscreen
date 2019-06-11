@@ -1,5 +1,6 @@
 package main;
 
+import db.DbHelper;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -59,6 +60,7 @@ public class SplashScreenController implements Initializable {
                                 Parent root = FXMLLoader.load(getClass().getResource("/Auth/Login.fxml"));
                                 parent.getChildren().removeAll();
                                 parent.getChildren().setAll(root);
+                                 DbHelper.createNewDatabase("test.db");
                             } catch (IOException ex) {
                                 Logger.getLogger(SplashScreenController.class.getName()).log(Level.SEVERE, null, ex);
                             }
