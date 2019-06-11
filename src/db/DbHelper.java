@@ -29,17 +29,16 @@ public class DbHelper {
         }
 
     }
+
     private static void createTables() {
         try {
             stmt = conn.createStatement();
             String qu = "CREATE TABLE IF NOT EXISTS keys( key varchar(64) PRIMARY KEY, user text NOT NULL, organization text NOT NULL, email text NOT NULL UNIQUE, Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP);";
             stmt.executeUpdate(qu);
             stmt.close();
-            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(DbHelper.class.getName()).log(Level.SEVERE, null, ex);
         }
-       
 
     }
 
