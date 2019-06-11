@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -13,19 +14,32 @@ import java.util.logging.Logger;
  */
 public class DbHelper {
 
-    public static void createNewDatabase(String fileName) {
+    static Connection conn = null;
+    static Statement stmt = null;
 
+    public static void createNewDatabase(String fileName) {
         try {
-            String url = "jdbc:sqlite:" + fileName;
-            Connection conn = DriverManager.getConnection(url);
+            String url = "jdbc:sqlite:src/resources/database/" + fileName;
+            conn = DriverManager.getConnection(url);
             if (conn != null) {
-                DatabaseMetaData meta = conn.getMetaData();
-                System.out.println("The driver name is " + meta.getDriverName());
-                System.out.println("A new database has been created.");
+                createTables();
             }
         } catch (SQLException ex) {
             Logger.getLogger(DbHelper.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+    }
+    private static void createTables() {
+        try {
+            stmt = conn.createStatement();
+            String qu = "CREATE TABLE IF NOT EXISTS keys( key varchar(64) PRIMARY KEY, user text NOT NULL, organization text NOT NULL, email text NOT NULL UNIQUE, Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP);";
+            stmt.executeUpdate(qu);
+            stmt.close();
+            conn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(DbHelper.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println("Kenys table created successfully");
 
     }
 
